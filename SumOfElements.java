@@ -1,16 +1,22 @@
 import java.util.*;
-class SumOfEle {
+class SumOfElements {
     public static void main(String[] args) {
-        int length,sum=0;
+
+        // Changed int type to long type for computing long integers
+        int length=0;
+        long sum=0;
+
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter the length of the array : ");
+        System.out.print("Enter the length of the array : ");
         length = sc.nextInt();
-        int ar[]=new int[length];
 
-        System.out.println("Enter the elements of the array : ");
+        long ar[]=new long[length];
+
+        //Removed New Lines in print Statements
         for(int i=0;i<length;i++)
         {
+            System.out.print("Enter the elements of the array : ");
             ar[i]=sc.nextInt();
             sum+=ar[i];
         }
